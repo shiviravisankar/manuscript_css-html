@@ -1,0 +1,40 @@
+/* Your CSS Here! */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+body{
+        margin: 100px;
+        padding: 30px;
+      }
+        .tabs {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 100vw;
+          font-family: sans-serif;
+        }
+      .tabs_label {
+        padding: 10px 30px;
+        cursor: pointer;
+      }
+      
+      .tabs_radio {
+        display: none;
+      }
+      
+      .tabs_content {
+        order: 1;
+        width: 100%;
+        max-width: 80ch;
+        border-bottom: 3px solid #dddddd;
+        line-height: 1.5;
+        font-size: 0.9em;
+        display: none;
+      }
+      
+      .tabs_radio:checked + .tabs_label {
+        font-weight: bold;
+        color: #009578;
+        border-bottom: 2px solid #009578;
+      }
+      
+      .tabs_radio:checked + .tabs_label + .tabs_content {
+        display: initial;
+      }
